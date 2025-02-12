@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(214, 161, 61);
+  padding: 20px;
+  border: 15px solid darkblue;
+  margin: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+}
+
+.top { top: -40px; left: 50%; transform: translateX(-50%); }
+.bottom { bottom: -40px; left: 50%; transform: translateX(-50%); }
+.left { left: -50px; top: 50%; transform: translateY(-50%); }
+.right { right: -50px; top: 50%; transform: translateY(-50%); }
+
+.margin {
+  background-color: lightblue;
+  padding: 15px;
+  display: inline-block;
+}
+
+.padding {
+  background-color: deepskyblue;
+  padding: 20px;
+  display: inline-block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="margin">
+        <div class="label top">TOP</div>
+        <div class="label bottom">BOTTOM</div>
+        <div class="label left">LEFT</div>
+        <div class="label right">RIGHT</div>
+      
+        <div class="padding">
+          <div class="box">CONTENT</div>
+        </div>
+      </div>
+      
+</body>
+</html>
